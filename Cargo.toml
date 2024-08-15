@@ -10,7 +10,7 @@ edition = "2021"
 rust-version = "1.62"
 
 [dependencies]
-clap = { version = "3.2.16", features = ["derive", "env"] }
+clap = { version = "4.1.11", features = ["derive", "env"] }
 thiserror = "1.0.32"
 toml = "0.5.9"
 toml_edit = "0.14.4"
