@@ -18,14 +18,14 @@ jobs:
   fmt:
     runs-on: ubuntu-latest
     steps:
-    - uses: actions/checkout@v3
+    - uses: actions/checkout@v4
     - run: rustup update
     - run: make fmt
 
   build-and-test:
     runs-on: ubuntu-latest
     steps:
-    - uses: actions/checkout@v3
+    - uses: actions/checkout@v4
     - run: rustup update
     - run: cargo install --locked --version 0.9.33 cargo-nextest
     - run: make check
@@ -34,6 +34,6 @@ jobs:
   doc:
     runs-on: ubuntu-latest
     steps:
-    - uses: actions/checkout@v3
+    - uses: actions/checkout@v4
     - run: rustup install nightly
     - run: make doc
